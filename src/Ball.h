@@ -18,6 +18,6 @@ typedef struct {
 
 #include "Paddle.h"
 
-void ball_logic(Ball *ball, Paddle *player, Paddle *cpu, char *score_str);
+void ball_logic(Ball *ball, Paddle *player, Paddle *cpu);
 
 #endif 

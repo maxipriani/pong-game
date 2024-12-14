@@ -10,7 +10,7 @@ static void reset_ball(Ball* ball) {
     ball->vel_x *= -1;
 }
 
-void ball_logic(Ball *ball, Paddle* player, Paddle* cpu, char* score){
+void ball_logic(Ball *ball, Paddle* player, Paddle* cpu){
 
     // Ball movement
     ball->rectangle.x += ball->vel_x;
@@ -19,14 +19,10 @@ void ball_logic(Ball *ball, Paddle* player, Paddle* cpu, char* score){
     // CPU Scored (horizontal collisions)
     if (ball->rectangle.x <= 0) {
         reset_ball(ball);
-        cpu->score++;
-        printf(score, "%d %d", player->score, cpu->score);
     }
     // Player scored (horizontal collisions)
     if (ball->rectangle.x + ball->rectangle.w >= WINDOW_WIDTH) {
         reset_ball(ball);
-        player->score++;
-        printf(score, "%d %d", player->score, cpu->score);
     }
 
     // Vertical collisions
