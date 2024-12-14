@@ -13,6 +13,7 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
     ${SRC_DIR}/Ball.c
     ${SRC_DIR}/Paddle.c
     ${SRC_DIR}/game_init.c
+    ${SRC_DIR}/game.c
  )
 
 include_directories(${SRC_DIR})
