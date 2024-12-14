@@ -1,20 +1,29 @@
-#include "init.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include "init.h"
+#include "Ball.h"
+#include "Paddle.h"
+#include "game_init.h"
+#include "game.h"
 
 int main(int argc, char *argv[]) {
-
     SDLResources resources;
+    init_game(&resources);
 
-    if (init_game(&resources) != 0) {
-        SDL_Quit();
-        return -1;
-    }
+    Ball ball;
+    ball_init(&ball);
 
-    SDL_Delay(5000);
+    Paddle player;
+    player_init(&player);
+
+    Paddle cpu;
+    cpu_init(&cpu);
+
+    game_loop(&resources, &player, &cpu, &ball);
 
     SDL_cleanup(&resources);
+
     return 0;
 }
