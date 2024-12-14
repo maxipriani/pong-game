@@ -1,0 +1,14 @@
+# Binaries
+build/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE's temporary files
+*.vscode/
+
+# Others
+*.DS_Store
