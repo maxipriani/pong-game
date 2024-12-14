@@ -10,9 +10,9 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
  set(SRC_FILES
     ${SRC_DIR}/init.c
     ${SRC_DIR}/main.c
-    # ${SRC_DIR}/game.c
-    # ${SRC_DIR}/ball.c
-    # ${SRC_DIR}/paddle.c
+    ${SRC_DIR}/Ball.c
+    ${SRC_DIR}/Paddle.c
+    ${SRC_DIR}/game_init.c
  )
 
 include_directories(${SRC_DIR})
