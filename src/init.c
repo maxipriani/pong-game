@@ -1,11 +1,5 @@
-#include "init.h"
 #include <stdio.h>
-
-#define WINDOW_TITLE "Pong"
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 800
-#define FONT_PATH "assets/fonts/font.ttf"
-#define FONT_SIZE 20
+#include "init.h"
 
 static void print_SDL_error(const char *message) {
     fprintf(stderr, "%s: %s\n", message, SDL_GetError());
@@ -121,3 +115,4 @@ int init_game(SDLResources *resources) {
 
     return 0;
 }
+
