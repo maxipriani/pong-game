@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[]) {
     SDLResources resources;
-    init_game(&resources);
+    game_init(&resources);
 
     Ball ball;
     ball_init(&ball);

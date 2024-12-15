@@ -20,6 +20,7 @@ typedef struct {
 int init_game(SDLResources *resources);
 void SDL_cleanup(SDLResources *resources);
 
+int game_init(SDLResources *resources);
 int SDL_init(SDLResources *resources);
 int window_init(SDLResources *resources);
 int render_init(SDLResources *resources);

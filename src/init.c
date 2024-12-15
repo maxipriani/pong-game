@@ -80,7 +80,7 @@ void SDL_cleanup(SDLResources *resources) {
     SDL_Quit();
 }
 
-int initialize_game(SDLResources *resources) {
+int game_init(SDLResources *resources) {
     resources->window = NULL;
     resources->renderer = NULL;
     // resources->font = NULL;
@@ -105,14 +105,3 @@ int initialize_game(SDLResources *resources) {
 
     return 0;
 }
-
-int init_game(SDLResources *resources) {
-
-    if (initialize_game(resources) != 0) {
-        print_SDL_error("Game initialization failed");
-        return -1;
-    }
-
-    return 0;
-}
-
