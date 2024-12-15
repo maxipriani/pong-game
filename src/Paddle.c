@@ -15,17 +15,17 @@ void cpu_logic(Paddle *cpu, Ball *ball) {
 
     if (ball->rectangle.x > CPU_ACTIVATION_ZONE) {
         if (ball->rectangle.y >= cpu->rectangle.y) {
-            cpu->rectangle.y += PADDLE_SPEED;
+            cpu->rectangle.y += CPU_SPEED;
         } else if (ball->rectangle.y <= cpu->rectangle.y + cpu->rectangle.h) {
-            cpu->rectangle.y -= PADDLE_SPEED;
+            cpu->rectangle.y -= CPU_SPEED;
         }
     } else {
         float paddle_center = cpu->rectangle.y + (cpu->rectangle.h / 2);
 
         if (paddle_center > SCREEN_CENTER + CPU_REST_MARGIN) {
-            cpu->rectangle.y -= PADDLE_SPEED;
+            cpu->rectangle.y -= CPU_SPEED;
         } else if (paddle_center < SCREEN_CENTER - CPU_REST_MARGIN) {
-            cpu->rectangle.y += PADDLE_SPEED;
+            cpu->rectangle.y += CPU_SPEED;
         }
     }
 
@@ -34,10 +34,10 @@ void cpu_logic(Paddle *cpu, Ball *ball) {
 
 void player_logic(Paddle *player) {
     if (player->controls[0] && !player->controls[1]) {
-        player->rectangle.y -= PADDLE_SPEED;
+        player->rectangle.y -= PLAYER_SPEED;
     }
     if (player->controls[1] && !player->controls[0]) {
-        player->rectangle.y += PADDLE_SPEED;
+        player->rectangle.y += PLAYER_SPEED;
     }
 
     constrain_paddle_position(player);

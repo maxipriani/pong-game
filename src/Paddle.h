@@ -4,8 +4,9 @@
 #include <SDL2/SDL.h>
 #include "Ball.h"
 
-#define PADDLE_SPEED 15
-#define CPU_ACTIVATION_ZONE (WINDOW_WIDTH - WINDOW_WIDTH / 4)
+#define PLAYER_SPEED 15
+#define CPU_SPEED 10
+#define CPU_ACTIVATION_ZONE (WINDOW_WIDTH - WINDOW_WIDTH / 2)
 #define CPU_REST_MARGIN 10
 
 typedef struct {
