@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include "Ball.h"
 
-#define BALL_SPAWN_X (WINDOW_WIDTH / 2 - BALL_SIZE / 2)
-#define BALL_SPAWN_Y (WINDOW_HEIGHT / 2 - BALL_SIZE / 2)
-
 static void reset_ball(Ball* ball) {
     ball->rectangle.x = BALL_SPAWN_X;
     ball->rectangle.y = BALL_SPAWN_Y;
