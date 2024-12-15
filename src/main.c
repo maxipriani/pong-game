@@ -1,12 +1,12 @@
+#include "Ball.h"
+#include "Paddle.h"
+#include "game.h"
+#include "game_init.h"
+#include "init.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include "init.h"
-#include "Ball.h"
-#include "Paddle.h"
-#include "game_init.h"
-#include "game.h"
 
 int main(int argc, char *argv[]) {
     SDLResources resources;

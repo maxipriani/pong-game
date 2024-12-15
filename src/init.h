@@ -26,4 +26,4 @@ int window_init(SDLResources *resources);
 int render_init(SDLResources *resources);
 // int load_font(SDLResources *resources);
 
-#endif 
+#endif

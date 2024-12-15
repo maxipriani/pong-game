@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include "game_init.h"
+#include <stdio.h>
 
-void ball_init(Ball *ball){
+void ball_init(Ball *ball) {
 
     ball->rectangle.x = BALL_SPAWN_X;
     ball->rectangle.y = BALL_SPAWN_Y;
@@ -11,7 +11,7 @@ void ball_init(Ball *ball){
     ball->vel_y = 0;
 }
 
-void player_init(Paddle *player){
+void player_init(Paddle *player) {
     player->rectangle.x = 50;
     player->rectangle.y = (WINDOW_HEIGHT - 100 / 2);
     player->rectangle.w = 20;
@@ -23,7 +23,7 @@ void player_init(Paddle *player){
     player->controls[1] = 0;
 }
 
-void cpu_init(Paddle *cpu){
+void cpu_init(Paddle *cpu) {
     cpu->rectangle.x = WINDOW_WIDTH - 70;
     cpu->rectangle.y = (WINDOW_HEIGHT - 100 / 2);
     cpu->rectangle.w = 20;

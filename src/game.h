@@ -9,5 +9,4 @@ void redraw_screen(SDLResources *resources, Paddle *player, Paddle *cpu, Ball *b
 void event_handler(SDL_Event event, Paddle *player, int *running);
 void game_loop(SDLResources *resources, Paddle *player, Paddle *cpu, Ball *ball);
 
-
 #endif

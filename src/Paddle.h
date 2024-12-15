@@ -4,14 +4,14 @@
 #include <SDL2/SDL.h>
 #include "Ball.h"
 
-#define PADDLE_SPEED 10
+#define PADDLE_SPEED 15
 #define CPU_ACTIVATION_ZONE (WINDOW_WIDTH - WINDOW_WIDTH / 4)
 #define CPU_REST_MARGIN 10
 
 typedef struct {
-    SDL_Rect rectangle; 
-    int score;          
-    int controls[2];    
+    SDL_Rect rectangle;
+    int score;
+    int controls[2];
 } Paddle;
 
 void cpu_logic(Paddle *cpu, Ball *ball);
@@ -19,4 +19,4 @@ void player_logic(Paddle *player);
 
 void constrain_paddle_position(Paddle *paddle);
 
-#endif 
+#endif
