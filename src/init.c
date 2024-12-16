@@ -1,4 +1,4 @@
-#include "init.h"
+#include "../includes/init.h"
 #include <stdio.h>
 
 static void print_SDL_error(const char *message) {

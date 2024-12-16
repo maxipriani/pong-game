@@ -1,4 +1,4 @@
-#include "game_init.h"
+#include "../includes/game_init.h"
 #include <stdio.h>
 
 void ball_init(Ball *ball) {
