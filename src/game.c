@@ -1,4 +1,4 @@
-#include "../include/game.h"
+#include "game.h"
 #include <stdio.h>
 
 void redraw_screen(SDLResources *resources, Paddle *player, Paddle *cpu, Ball *ball) {

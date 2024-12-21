@@ -1,8 +1,8 @@
-#include "../include/ball.h"
-#include "../include/paddle.h"
-#include "../include/game.h"
-#include "../include/game_init.h"
-#include "../include/init.h"
+#include "ball.h"
+#include "paddle.h"
+#include "game.h"
+#include "game_init.h"
+#include "init.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>

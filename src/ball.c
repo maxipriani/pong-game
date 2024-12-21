@@ -1,4 +1,4 @@
-#include "../include/ball.h"
+#include "ball.h"
 #include <stdbool.h>
 #include <stdio.h>
 

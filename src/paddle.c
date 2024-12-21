@@ -1,5 +1,5 @@
-#include "../include/ball.h"
-#include "../include/paddle.h"
+#include "ball.h"
+#include "paddle.h"
 
 void constrain_paddle_position(Paddle *paddle) {
     if (paddle->rectangle.y <= 0) {
