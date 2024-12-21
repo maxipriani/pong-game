@@ -2,7 +2,7 @@
 #define PADDLE_H_
 
 #include <SDL2/SDL.h>
-#include "Ball.h"
+#include "ball.h"
 
 #define PLAYER_SPEED 15
 #define CPU_SPEED 10

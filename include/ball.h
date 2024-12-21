@@ -16,7 +16,7 @@ typedef struct {
     float vel_y;
 } Ball;
 
-#include "Paddle.h"
+#include "paddle.h"
 
 void ball_logic(Ball *ball, Paddle *player, Paddle *cpu);
 
