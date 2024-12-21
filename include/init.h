@@ -17,7 +17,6 @@ typedef struct {
     // TTF_Font *font;
 } SDLResources;
 
-int init_game(SDLResources *resources);
 void SDL_cleanup(SDLResources *resources);
 
 int game_init(SDLResources *resources);
