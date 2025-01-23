@@ -12,3 +12,4 @@ Makefile
 
 # Others
 *.DS_Store
+*.Identifier
